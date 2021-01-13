@@ -2,7 +2,7 @@ const express = require('express');
 const routes = express.Router();
 const Tasks = require('../controllers/tasks')
 const Albums =require('../controllers/albums');
-const { getAll } = require('../controllers/tasks');
+
 
 routes.get('/task', Tasks.getAll)
 routes.get('/task/:id', Tasks.get)
